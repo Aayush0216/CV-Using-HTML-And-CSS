@@ -1,1 +1,1 @@
-# CV-Using-HTML-And-CSS
+# PRACTTICAL 1 CV-Using-HTML-And-CSS 
