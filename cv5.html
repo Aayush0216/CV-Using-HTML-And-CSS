@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aayush Sharma - CV</title>
+    <link rel="stylesheet" href="styleees.css">
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>Aayush Sharma</h1>
+            <img src="profile photo.jpg" alt="Aayush Sharma" class="profile-photo">
+       </div>
+       <div class="about-section">
+        <button onclick="toggleAbout()">About Me</button>
+        <div id="about" class="info-section">
+            <h2>About Me</h2>
+            <p>Hi, I'm Aayush Sharma, a passionate computer science student at Chandigarh College of Engineering and Technology. I'm currently in my 2nd year, specializing in Computer Science and Engineering. My interests include web development, app development, AI, and exploring new technologies. I enjoy working on projects that challenge me and help me grow as a developer.</p>
+        </div>
+    </div>
+
+        
+        <div class="buttons">
+            <button onclick="showSection('personal')">Personal Information</button>
+            <button onclick="showSection('professional')">Professional Information</button>
+        </div>
+        
+        <div id="personal" class="info-section">
+            <h2>Personal Information</h2>
+            <p>Name: Aayush Sharma</p>
+            <p>College: Chandigarh College of Engineering and Technology</p>
+            <p>Year: 2nd Year</p>
+            <p>Branch: Computer Science and Engineering</p>
+            <p>Contact: co23304@ccet.ac.in</p>
+            
+        </div>
+        
+        <div id="professional" class="info-section" style="display:none;">
+            <h2>Professional Information</h2>
+            <p>Skills: HTML, CSS, JavaScript,C,C++</p>
+            <p>Projects: I made a currency converter using C++ and a clock timer using C. </p>
+            <p>Experience: NOT YET </p>
+            <p>E-mail: co23304@ccet.ac.in</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="LinkedIn.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="YouTube"></a>
+            <a href="https://github.com" target="_blank"><img src="github.png" alt="GitHub"></a>
+        </div>
+    </div>
+
+    <script> 
+        function showSection(section) {
+            document.getElementById('personal').style.display = 'none';
+            document.getElementById('professional').style.display = 'none';
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
